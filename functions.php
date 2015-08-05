@@ -1,6 +1,6 @@
 <?php
 
-function circa_ee_venue_city_state( $VNU_ID = 0, $echo = TRUE ) {
+function hexa_ee_venue_city_state( $VNU_ID = 0, $echo = TRUE ) {
 	EE_Registry::instance()->load_helper( 'Venue_View' );
 	$venue = EEH_Venue_View::get_venue( $VNU_ID );
 	$city = ( $venue->city() != 'Unknown' ? $venue->city() : '' );
